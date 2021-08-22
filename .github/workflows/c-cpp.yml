@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: OpenGL Actions
+      uses: NishkarshRaj/OpenGL_Actions@1.0
     - name: Setup Vulkan SDK
       uses: humbletim/setup-vulkan-sdk@v1.0.3
     - name: make
