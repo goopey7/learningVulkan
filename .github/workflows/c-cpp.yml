@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: setup GLFW
-      run: sudo apt-get update && sudo apt-get install -yq libglfw3-dev && sudo apt-get install -yq libglfw3
+      run: sudo apt-get update && sudo apt-get install -yq libglfw3-dev && sudo apt-get install -yq libglfw3 && sudo apt-get install -yq xorg-dev
     - name: Setup Vulkan SDK
       uses: humbletim/setup-vulkan-sdk@v1.0.3
     - name: make
